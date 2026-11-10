@@ -1,3 +1,5 @@
+Note: The DB is now disabled so webapp is off
+
 # Lacanau 2026
 
 A mobile web app (PWA) that turned a week-long holiday with 13 friends into a game: quests validated by vote, dares, anonymous notes, photos, polls, a shared planning, meal scheduling, a leaderboard and an elimination game.
