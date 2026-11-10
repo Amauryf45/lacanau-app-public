@@ -1,0 +1,24 @@
+# deps
+/node_modules
+
+# next
+/.next
+/out
+
+# env — jamais de clés dans le repo
+.env
+.env.*
+!.env.example
+
+# vercel
+.vercel
+
+# supabase local
+supabase/.temp
+supabase/.branches
+
+# misc
+.DS_Store
+*.log
+*.tsbuildinfo
+next-env.d.ts

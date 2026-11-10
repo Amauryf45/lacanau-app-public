@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ocean-50: #eef9ff;
+  --color-ocean-100: #d9f1fe;
+  --color-ocean-200: #bce7fd;
+  --color-ocean-300: #8ed9fb;
+  --color-ocean-400: #59c2f7;
+  --color-ocean-500: #33a5f0;
+  --color-ocean-600: #1d87e4;
+  --color-ocean-700: #196fd0;
+  --color-ocean-800: #1a5aa9;
+  --color-ocean-900: #1b4d85;
+  --color-sand-50: #fdf9f0;
+  --color-sand-100: #faf0da;
+  --color-sand-200: #f4dfb4;
+  --color-sand-300: #ecc884;
+  --color-sand-400: #e3ab52;
+  --color-sand-500: #dc9432;
+  --color-sunset-400: #fb923c;
+  --color-sunset-500: #f97316;
+
+  --font-sans: var(--font-nunito), ui-rounded, system-ui, sans-serif;
+}
+
+html {
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  background: linear-gradient(180deg, var(--color-ocean-50) 0%, var(--color-sand-50) 100%);
+  min-height: 100dvh;
+  color: #1e293b;
+  overscroll-behavior-y: none;
+}
+
+/* Carte standard */
+.card {
+  @apply bg-white/90 rounded-2xl shadow-sm border border-ocean-100 p-4;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center gap-2 rounded-xl font-bold transition active:scale-95 disabled:opacity-40 disabled:active:scale-100 bg-ocean-600 text-white px-4 py-2.5 shadow-md shadow-ocean-600/20;
+}
+
+.btn-ghost {
+  @apply inline-flex items-center justify-center gap-2 rounded-xl font-bold transition active:scale-95 disabled:opacity-40 disabled:active:scale-100 bg-ocean-100 text-ocean-800 px-4 py-2.5;
+}
+
+.input {
+  @apply w-full rounded-xl border border-ocean-200 bg-white px-3 py-2.5 text-base outline-none focus:border-ocean-500 focus:ring-2 focus:ring-ocean-200;
+}
+
+.chip {
+  @apply inline-flex items-center rounded-full px-3 py-1 text-sm font-bold;
+}
+
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
